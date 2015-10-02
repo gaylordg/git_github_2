@@ -1,0 +1,45 @@
+html, body
+{
+		height: 100%;
+		margin: 0;
+        padding: 0;
+}
+body
+{
+        width: 1024px;
+        margin: auto;
+}
+
+header
+{
+        height: 150px;
+}
+h1, h2, h4
+{
+        text-align: center;
+}
+
+section
+{
+        margin-bottom: 50px;
+}
+h3, h4
+{
+        text-decoration: underline;
+}
+
+img
+{
+        display:block;
+        margin:auto;
+}
+
+table
+{
+        width: 100%;
+        border-collapse: collapse;
+}
+table, td 
+{
+        border: 2px solid red;
+}

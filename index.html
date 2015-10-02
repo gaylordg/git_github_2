@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <meta charset="utf-8" />
-                <title>Git GitHub</title>
-        </head>
-
-        <body>
-                <h1>Gérer son code avec Git et GitHub</h1>
-                <h2>commit, git log et branche</h2>
-                <div>
-                        <h3>1 - Qu'est ce qu'un commit ?</h3>
-                        <p>
-                                Un commit, c'est un marqueur de toutes les opérations effectuées sur son code.
-                                Ainsi, l'ajout, la suppression ou la modification d'un ou plusieurs fichiers peut être
-                                conservé en une version tout en expliquant les raisons de ces changements grâce aux     messages.
-                        </p>
-
-                        <h4>Commande :</h4>
-                        <table border="1" border-color="black">
-                                <tr>
-                                        <td>git commit -m « un message»</td>
-                                        <td>Permet de faire un commit en laissant un message expliquant les modifications apportées</td>
-                                </tr>
-                        </table>
-                        <h4>Schéma :</h4>
-                        <img src="images/commit.png" alt="commit"/>
-                </div>
-
-                <div>
-                        <h3>2 - A quoi sert la commande git log ?</h3>
-                        <p>
-                                La commande permet de voir l'historique de tous les commits. Le dernier commit
-                                effectué se trouvera en premier.
-                                </br>
-                                Pour chaque commit on retrouvera :
-                                <ul>
-                                        <li>Le SHA : l'identifiant unique du commit</li>
-                                        <li>le nom de l'auteur</li>
-                                        <li>la date</li>
-                                        <li>le message : Il est très important de mettre un message clair pour visualiser les raisons des modifications</li>
-                                </ul>
-                        </p>
-
-                        <h4>Capture d'écran d'un git log4</h4>
-                        <img src="images/git_log_img.png" alt="git log"/>
-                </div>
-
-                <div>
-                        <h3>3 – Qu'est qu'une branche ?</h3>
-                        <p>
-                                Pour travailler sur une nouvelle fonctionnalité ou expérimenter une légère
-                                modification d'un projet sans interférer sur le code principal ou branche principale, on se
-                                détache de celui-ci en créant une branche secondaire, la finalité étant de fusionner ces deux branches.
-                                Par convention la branche principale se nomme « master ».
-                        <p>
-
-                        <h4>Quelques commandes :</h4>
-                        <table border="1" border-color="black">
-                                <tr>
-                                        <td>git branch nom_branche</td>
-                                        <td>Permet de créer une branche</td>
-                                </tr>
-                                <tr>
-                                        <td>git checkout nom branche</td>
-                                        <td>Permet de se positionner sur une branche</td>
-                                </tr>
-                                <tr>
-                                        <td>git merge nom_branche</td>
-                                        <td>Permet de fusionner une branche avec celle sur laquelle on est positionnné</td>
-                                </tr>
-                        </table>
-
-                        <h4>Schéma :</h4>
-                        <img src="images/git_branch.png" alt="branches"/>
-                </div>
-        </body>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Git GitHub</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Gérer son code avec Git et GitHub</h1>
+			<h2>commit, git log et branche</h2>
+		</header>
+		
+		<section>
+			<h3>1 - Qu'est ce qu'un commit ?</h3>
+			<p>
+				Un commit, c'est un marqueur de toutes les opérations effectuées sur son code.
+				Ainsi, l'ajout, la suppression ou la modification d'un ou plusieurs fichiers peut être
+				conservé en une version tout en expliquant les raisons de ces changements grâce aux	messages.
+			</p>
+			
+			<h4>Commande</h4>
+			<table>
+				<tr>
+					<td>git commit -m « un message»</td>
+					<td>Permet de faire un commit en laissant un message expliquant les modifications apportées</td>
+				</tr>
+			</table>
+			<h4>Schéma</h4>
+			<img src="images/commit.png" alt="commit"/>
+		</section>
+		
+		<section>
+			<h3>2 - A quoi sert la commande git log ?</h3>
+			<p>
+				La commande permet de voir l'historique de tous les commits. Le dernier commit
+				effectué se trouvera en premier.
+				</br>
+				Pour chaque commit on retrouvera :
+				<ul>
+					<li>Le SHA : l'identifiant unique du commit</li>
+					<li>le nom de l'auteur</li>
+					<li>la date</li>
+					<li>le message : Il est très important de mettre un message clair pour visualiser les raisons des modifications</li>
+				</ul>
+			</p>
+			
+			<h4 class="schema">Capture d'écran d'un git log4</h4>
+			<img src="images/git_log_img.png" alt="git log"/>
+		</section>
+		
+		<section>
+			<h3>3 – Qu'est qu'une branche ?</h3>
+			<p>
+				Pour travailler sur une nouvelle fonctionnalité ou expérimenter une légère
+				modification d'un projet sans interférer sur le code principal ou branche principale, on se
+				détache de celui-ci en créant une branche secondaire, la finalité étant de fusionner ces deux branches.
+				Par convention la branche principale se nomme « master ».
+			<p>
+			
+			<h4>Quelques commandes</h4>
+			<table>
+				<tr>
+					<td>git branch nom_branche</td>
+					<td>Permet de créer une branche</td>
+				</tr>
+				<tr>
+					<td>git checkout nom branche</td>
+					<td>Permet de se positionner sur une branche</td>
+				</tr>
+				<tr>
+					<td>git merge nom_branche</td>
+					<td>Permet de fusionner une branche avec celle sur laquelle on est positionnné</td>
+				</tr>
+			</table>
+			
+			<h4>Schéma</h4>
+			<img src="images/git_branch.png" alt="branches"/>
+		</section>
+	</body>
 </html>
